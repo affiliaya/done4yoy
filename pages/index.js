@@ -12,11 +12,3 @@ app.use('/img', express.static(_dirname + 'public/img'))
 app.get('', (req, res) => {
     res.sendFile(_dirname + '/views/index.html')
 })
-
-
-
-
-
-
-// Listen on port 3000
-app.listen(port, () => console.info('Listening on port ${port}'))
